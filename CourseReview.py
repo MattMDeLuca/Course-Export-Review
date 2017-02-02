@@ -19,8 +19,8 @@ def findLatestExport(courseExportDir):
         if "_export_{}".format(sortedList[0]) in csv_r:
             print(sortedList[0])
             return os.path.join(courseExportDir, csv_r)
-    else:
-        return print('Previous export cannot be found.')
+        else:
+            return print('Previous export cannot be found.')
 
 
 def main():
